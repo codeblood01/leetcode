@@ -46,6 +46,7 @@ class Solution {
         }
         return false;
     }
+    //using binary search among 1 to n/2 numbers, if there are many of such queries its better to prepare a hashset of perfect squares
 }
 //leetcode submit region end(Prohibit modification and deletion)
 	
