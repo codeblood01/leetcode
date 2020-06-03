@@ -20,7 +20,7 @@
 // 
 // Related Topics String
 	
-package com.gourav.leetcode.may30days.leetcode.editor.en;
+package com.gourav.leetcode.may30days;
 
 import java.util.HashMap;
 import java.util.Map;
