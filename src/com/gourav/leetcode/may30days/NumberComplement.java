@@ -1,3 +1,5 @@
+package com.gourav.leetcode.may30days;
+
 import java.lang.Math;
 
 //Given a positive integer, output its complement number. The complement strateg

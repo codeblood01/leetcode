@@ -19,7 +19,7 @@
 // 
 // Related Topics Array Divide and Conquer Bit Manipulation
 	
-package com.gourav.leetcode.may30days.leetcode.editor.en;
+package com.gourav.leetcode.may30days;
 
 import java.util.HashMap;
 import java.util.Map;

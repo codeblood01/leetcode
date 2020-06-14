@@ -29,7 +29,7 @@
 // 
 // Related Topics Linked List
 	
-package com.gourav.leetcode.may30days.leetcode.editor.en;
+package com.gourav.leetcode.may30days;
 
 //leetcode submit region begin(Prohibit modification and deletion)
 /**

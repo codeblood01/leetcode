@@ -39,7 +39,7 @@
 // 65535]. 
 // Related Topics Depth-first Search
 
-package com.gourav.leetcode.may30days.leetcode.editor.en;
+package com.gourav.leetcode.may30days;
 
 import java.util.LinkedList;
 import java.util.Queue;
