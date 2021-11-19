@@ -30,7 +30,7 @@
 // Related Topics Hash Table Two Pointers String Sliding Window 
 // 👍 3636 👎 97
 
-package com.gourav.leetcode.may30days.leetcode.editor.en;
+package com.gourav.leetcode.may30days;
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public boolean checkInclusion(String s1, String s2) {
