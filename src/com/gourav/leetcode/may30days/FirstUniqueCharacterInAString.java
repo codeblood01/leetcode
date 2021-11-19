@@ -17,7 +17,7 @@
 //Note: You may assume the string contain only lowercase letters.
 // Related Topics Hash Table String
 	
-package com.gourav.leetcode.may30days.leetcode.editor.en;
+package com.gourav.leetcode.may30days;
 
 //setimport java.sql.Array;
 import java.util.*;

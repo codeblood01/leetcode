@@ -1,5 +1,5 @@
 
-package com.gourav.leetcode.may30days.leetcode.editor.en;
+package com.gourav.leetcode.may30days;
 
 //You are a product manager and currently leading a team to develop a new produc
 //t. Unfortunately, the latest version of your product fails the quality check. Si

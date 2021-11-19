@@ -3,6 +3,7 @@
   <component name="LeetcodeEditor">
     <option name="projectConfig">
       <map>
+<<<<<<< HEAD
         <entry key="$USER_HOME$/AppData/Local/Temp/leetcode/editor/en/[567]Permutation in String.java">
           <value>
             <LeetcodeEditor>
@@ -24,6 +25,37 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/src/com/gourav/leetcode/may30days/leetcode/editor/en/leetcode/editor/en/[567]Permutation in String.java" />
               <option name="questionId" value="567" />
+=======
+        <entry key="$PROJECT_DIR$/src/com/gourav/leetcode/june30days/leetcode/editor/en/[]Delete Node in a Linked List.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/com/gourav/leetcode/june30days/leetcode/editor/en/[]Delete Node in a Linked List.java" />
+              <option name="questionId" value="237" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/com/gourav/leetcode/june30days/leetcode/editor/en/[]Invert Binary Tree.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/com/gourav/leetcode/june30days/leetcode/editor/en/[]Invert Binary Tree.java" />
+              <option name="questionId" value="226" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/com/gourav/leetcode/june30days/leetcode/editor/en/[]Two City Scheduling.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/com/gourav/leetcode/june30days/leetcode/editor/en/[]Two City Scheduling.java" />
+              <option name="questionId" value="1095" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/tmp/leetcode/editor/en/[]Invert Binary Tree.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="/tmp/leetcode/editor/en/[]Invert Binary Tree.java" />
+              <option name="questionId" value="226" />
+>>>>>>> origin/master
             </LeetcodeEditor>
           </value>
         </entry>
