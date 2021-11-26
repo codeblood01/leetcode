@@ -41,6 +41,8 @@ import java.util.*;
 
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
+
+
     public List<List<Integer>> fourSum(int[] nums, int target) {
         List<List<Integer>> result = new ArrayList<List<Integer>>();
         int tempSum=0;
@@ -101,8 +103,6 @@ class Solution {
 
                     otherPair.put(nums[k],sum-nums[k]);
                     //System.out.println(nums[k]+" "+(sum-nums[k])+" "+sum);
-
-
                 }
             }
         }
