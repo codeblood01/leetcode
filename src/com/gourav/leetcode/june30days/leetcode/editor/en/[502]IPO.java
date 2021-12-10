@@ -55,22 +55,38 @@
 
 package com.gourav.leetcode.june30days.leetcode.editor.en;
 //leetcode submit region begin(Prohibit modification and deletion)
+import java.util.*;
 class Solution {
     public int findMaximizedCapital(int k, int w, int[] profits, int[] capital) {
-        PriorityQueue<Integer> temp;
-        int count=0;
-        HashMap<Integer,PrioritiQueue<Integer>> map = new HashMap<>();
-        for (int i = 0; i < capital.length; i++) {
-            if(map.contains(capital[i])){
-                temp = map.get(capital[i]);
-                temp.add(profit[i])
-                map.put(capital[i],temp);
-            }else {
-                PriorityQueue<Integer> = new PriorityQueue<>();
+        PriorityQueue<Pair> minHeap = new PriorityQueue<>((a,b)-> Integer.compare(a.capital,b.capital));
+        PriorityQueue<Pair> maxHeap = new PriorityQueue<>((a,b)-> Integer.compare(b.profit,a.profit));
 
-                map.put(capital[i],)
-            }
+        for (int i = 0; i < capital.length; i++) {
+            minHeap.add(new Pair(capital[i],profits[i]));
         }
+        System.out.println(minHeap+" "+maxHeap);
+        int initialCapital = w;
+        for (int i = 0; i < k; i++) {
+            System.out.println(minHeap.peek());
+            //System.out.println(minHeap.peek().profit);
+            while (minHeap.size()>0 && minHeap.peek().capital<=initialCapital){
+                maxHeap.add(minHeap.poll());
+            }
+            if(maxHeap.size()>0)
+                initialCapital+=maxHeap.poll().profit;
+            else
+                break;
+        }
+        return initialCapital;
+
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
+class Pair{
+    int  capital;
+    int  profit;
+    public Pair(int capital,int profit){
+        this.capital=capital;
+        this.profit=profit;
+    }
+}
