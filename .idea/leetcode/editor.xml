@@ -67,6 +67,22 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/com/gourav/leetcode/june30days/leetcode/editor/en/[46]Permutations.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/com/gourav/leetcode/june30days/leetcode/editor/en/[46]Permutations.java" />
+              <option name="questionId" value="46" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/com/gourav/leetcode/june30days/leetcode/editor/en/[47]Permutations II.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/com/gourav/leetcode/june30days/leetcode/editor/en/[47]Permutations II.java" />
+              <option name="questionId" value="47" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/com/gourav/leetcode/june30days/leetcode/editor/en/[480]Sliding Window Median.java">
           <value>
             <LeetcodeEditor>
@@ -104,6 +120,14 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/src/com/gourav/leetcode/june30days/leetcode/editor/en/[581]Shortest Unsorted Continuous Subarray.java" />
               <option name="questionId" value="581" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/com/gourav/leetcode/june30days/leetcode/editor/en/[784]Letter Case Permutation.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/com/gourav/leetcode/june30days/leetcode/editor/en/[784]Letter Case Permutation.java" />
+              <option name="questionId" value="800" />
             </LeetcodeEditor>
           </value>
         </entry>

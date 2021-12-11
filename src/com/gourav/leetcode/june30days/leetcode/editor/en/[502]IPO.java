@@ -82,7 +82,7 @@ class Solution {
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
-class Pair{
+ class Pair{
     int  capital;
     int  profit;
     public Pair(int capital,int profit){
