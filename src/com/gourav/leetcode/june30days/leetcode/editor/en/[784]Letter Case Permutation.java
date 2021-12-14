@@ -54,11 +54,11 @@ class Solution {
     StringBuilder answerSoFar=new StringBuilder();
     int length=0;
     public List<String> letterCasePermutation(String s) {
-        permuteTheCases(s, s.length());
+        permuteTheCases(s);
         return result;
     }
 
-    public void permuteTheCases(String str, int size){
+    public void permuteTheCases(String str){
             if (str.length()==0){
                 result.add(new String(answerSoFar));
                 answerSoFar.deleteCharAt(answerSoFar.length()-1);
@@ -66,12 +66,12 @@ class Solution {
             }
             if(str.charAt(0)>=48&& str.charAt(0)<=57){
                 answerSoFar.append(str.charAt(0));
-                permuteTheCases(new String(str.substring(1)), size);
+                permuteTheCases(new String(str.substring(1)));
             }else{
                 answerSoFar.append(Character.toUpperCase(str.charAt(0)));
-                permuteTheCases(new String(str.substring(1)), size);
+                permuteTheCases(new String(str.substring(1)));
                 answerSoFar.append(Character.toLowerCase(str.charAt(0)));
-                permuteTheCases(new String(str.substring(1)), size);
+                permuteTheCases(new String(str.substring(1)));
             }
             if(answerSoFar.length()>0)
                 answerSoFar.deleteCharAt(answerSoFar.length()-1);
