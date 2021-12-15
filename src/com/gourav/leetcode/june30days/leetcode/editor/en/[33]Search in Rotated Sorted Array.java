@@ -1,67 +1,52 @@
 public class Solution {
 
     public int solve(int[] A, int B) {
+        if(A.length < 2) return A[0]==B?0:-1;
         return search(A, B);
     }
     int midIndex= -1;
     int result= -1;
     public  int search(int[] nums, int target) {
+        if(nums.length < 2) return nums[0]==target?0:-1;
         findPeakIndex(nums,0,nums.length-1);
-        //System.out.println("++++++++"+midIndex);
-        if(midIndex==nums.length){
+        System.out.println("++++++++"+midIndex);
+        if(midIndex==-1)
+        {
             binarySearch(nums,0,nums.length-1,target,true);
-            return result;
         }
-        if(midIndex==0){
-            binarySearch(nums,0,nums.length-1,target,false);
-            return result;
-        }
+        if(midIndex!=-1)
         binarySearch(nums,0,midIndex,target,true);
-        // System.out.println("nahi mila");
 
         if(result!=-1) return result;
             //System.out.println("ye mai hun ______________");
         else {
             //System.out.println("ye mai hun ______________");
 
-            binarySearch(nums,midIndex+1,nums.length-1,target,false);}
+            binarySearch(nums,midIndex+1,nums.length-1,target,true);}
         //System.out.println("mai chala hun==========");
         return result;
     }
 
     public  void findPeakIndex(int[] nums, int left, int right){
         int mid = (left+right)/2;
-        if(mid+1>=nums.length) {
-            midIndex= mid;
-            return;
-        }if(mid<=0){
-            midIndex= mid;
-            return;
-        }
-        if(nums[mid+1]>nums[mid]){
-            findPeakIndex(nums,mid+1,right);
-        }if(nums[mid+1]<nums[mid]){
-            if(nums[mid-1]<nums[mid]){
+       if(left>right) return;
+        if(nums[mid]<nums[0]){
+            findPeakIndex(nums,left,mid-1);
+        }if(nums[mid]>=nums[0]){
+            if(mid==nums.length-1){
+                return;
+            }
+            if(nums[mid+1]<nums[mid]){
                 midIndex=mid;
                 return;
             }else{
-                findPeakIndex(nums,left,mid-1);
+                findPeakIndex(nums,mid+1,right);
             }
         }
         return;
     }
     public  void binarySearch(int[]nums,int left, int right,int target, boolean slope){
         int mid = (left+right)/2;
-//          if(mid+1>=right) {
-//              if(nums[mid]==target)
-//                  result=mid;
-//             return;
-//         }if(mid<=0){
-//              if(nums[mid]==target)
-//                  result = mid;
-
-//             return;
-//         }
         if(left>right) return;
         if (slope==true){
             if (nums[mid]==target) {
