@@ -63,6 +63,7 @@ class Solution {
             if (answerSoFar.charAt(answerSoFar.length() - 1) == '(') open = open - 1;
             else close = close - 1;
             answerSoFar.deleteCharAt(answerSoFar.length() - 1);
+            answerSoFar.
         }
         return;
     }
