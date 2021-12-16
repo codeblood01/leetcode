@@ -57,7 +57,7 @@ class Solution {
         }
         int right=0;int rightCounter=nums.length-1;
         while (count<nums.length){
-            if(((nums[index]>>>rightMostSetIndex)&1)==1) {
+            if(((nums[index]>>rightMostSetIndex)&1)==1) {
                 index++;
             }else {
                 right=nums[rightCounter];
@@ -66,9 +66,6 @@ class Solution {
                 rightCounter--;
             }
             count++;
-        }
-        for (int i = 0; i < nums.length; i++) {
-            System.out.print(nums[i]+" ");
         }
         temp=0;
         for (int i = 0; i < index; i++) {
