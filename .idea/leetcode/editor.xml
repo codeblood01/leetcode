@@ -75,6 +75,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/com/gourav/leetcode/june30days/leetcode/editor/en/[260]Single Number III.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/com/gourav/leetcode/june30days/leetcode/editor/en/[260]Single Number III.java" />
+              <option name="questionId" value="260" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/com/gourav/leetcode/june30days/leetcode/editor/en/[321]Create Maximum Number.java">
           <value>
             <LeetcodeEditor>
@@ -168,6 +176,14 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/src/com/gourav/leetcode/june30days/leetcode/editor/en/[784]Letter Case Permutation.java" />
               <option name="questionId" value="800" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/com/gourav/leetcode/june30days/leetcode/editor/en/[832]Flipping an Image.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/com/gourav/leetcode/june30days/leetcode/editor/en/[832]Flipping an Image.java" />
+              <option name="questionId" value="861" />
             </LeetcodeEditor>
           </value>
         </entry>
