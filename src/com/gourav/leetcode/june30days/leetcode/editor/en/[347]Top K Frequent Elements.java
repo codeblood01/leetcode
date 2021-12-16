@@ -56,6 +56,7 @@ class Solution {
             }
           //  System.out.println(key+"-----"+map.get(key));
            // System.out.println(topK.peek().frequency+"====="+topK.peek().value);
+           // System.out.println(topK.peek().frequency+"====="+topK.peek().value);
 
         }
         for (int i = 0; i < k; i++) {
