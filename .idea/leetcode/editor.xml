@@ -35,6 +35,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/com/gourav/leetcode/june30days/leetcode/editor/en/[1621]Number of Sets of K Non-Overlapping Line Segments.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/com/gourav/leetcode/june30days/leetcode/editor/en/[1621]Number of Sets of K Non-Overlapping Line Segments.java" />
+              <option name="questionId" value="1725" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/com/gourav/leetcode/june30days/leetcode/editor/en/[18]4Sum.java">
           <value>
             <LeetcodeEditor>
@@ -176,6 +184,22 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/src/com/gourav/leetcode/june30days/leetcode/editor/en/[581]Shortest Unsorted Continuous Subarray.java" />
               <option name="questionId" value="581" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/com/gourav/leetcode/june30days/leetcode/editor/en/[621]Task Scheduler.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/com/gourav/leetcode/june30days/leetcode/editor/en/[621]Task Scheduler.java" />
+              <option name="questionId" value="621" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/com/gourav/leetcode/june30days/leetcode/editor/en/[766]Toeplitz Matrix.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/com/gourav/leetcode/june30days/leetcode/editor/en/[766]Toeplitz Matrix.java" />
+              <option name="questionId" value="777" />
             </LeetcodeEditor>
           </value>
         </entry>
