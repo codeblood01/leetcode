@@ -53,17 +53,22 @@ class Solution {
             minHeap.add(new IndexValue(i, 0 , nums.get(i).get(0)));
             if(currentMax<nums.get(i).get(0)) currentMax =  nums.get(i).get(0);
         }
+        result[0] = minHeap.peek().val;
+        result[1] = currentMax;
         while(minHeap.size()>= nums.size()){
             IndexValue  temp = minHeap.poll();
-            if(nums.get(temp.listIndex).size()>= temp.indexInList+1)
+            if(nums.get(temp.listIndex).size()> temp.indexInList+1)
                 minHeap.add(new IndexValue(temp.listIndex, temp.indexInList+1, nums.get(temp.listIndex).get(temp.indexInList+1)));
-            if(currentMax<  nums.get(temp.listIndex).get(temp.indexInList+1))
-            currentMax =   nums.get(temp.listIndex).get(temp.indexInList+1);
+            else
+                return result;
+            if(nums.get(temp.listIndex).size()> temp.indexInList+1 && currentMax< nums.get(temp.listIndex).get(temp.indexInList+1))
+                currentMax =   nums.get(temp.listIndex).get(temp.indexInList+1);
             if(result[1]-result[0]>currentMax-minHeap.peek().val){
                 result[0] = minHeap.peek().val;
                 result[1] = currentMax;
             }
         }
+        return result;
     }
 }
 class IndexValue{

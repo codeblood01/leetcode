@@ -61,6 +61,7 @@ class Solution {
         PriorityQueue<PairSum> maxHeap = new PriorityQueue<>((a, b)-> Integer.compare(b.sum,a.sum));
         for(int i = 0; i<x; i++){
             for(int j = 0; j< y; j++){
+                //if(!maxHeap.isEmpty()&&nums1[i]+nums2[j]<maxHeap.peek().sum) break;
                 maxHeap.add(new PairSum(nums1[i], nums2[j], nums1[i]+nums2[j]));
                 if(maxHeap.size()>k)
                     maxHeap.poll();
