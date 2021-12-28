@@ -55,34 +55,43 @@ import java.util.PriorityQueue;
 
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
-    public int kthSmallest(int[][] matrix, int k) {
-        PriorityQueue<CoordinateValue> minHeap = new PriorityQueue<>((a,b)-> Integer.compare(a.val,b.val));
-
-        List<Integer> result = new ArrayList<Integer>();
-        for(int i =0 ; i<matrix.length; i++){
-            minHeap.add(new CoordinateValue(i,0,matrix[i][0]));
+    public int[] smallestRange(List<List<Integer>> nums) {
+        PriorityQueue<IndexValue> minHeap = new PriorityQueue<>((a, b)-> Integer.compare(a.val,b.val));
+        int currentMax =Integer.MIN_VALUE;
+        int[] result = new int[2];
+        result[0] = 1; result[1]= currentMax;
+        for(int i =0; i<nums.size(); i++){
+            minHeap.add(new IndexValue(i, 0 , nums.get(i).get(0)));
+            if(currentMax<nums.get(i).get(0)) currentMax =  nums.get(i).get(0);
         }
-        while(result.size()<k){
-            CoordinateValue temp = minHeap.poll();
-            result.add(temp.val);
-            if(temp.y+1<matrix.length)
-                minHeap.add(new CoordinateValue(temp.x,temp.y+1,matrix[temp.x][temp.y+1]));
+        result[0] = minHeap.peek().val;
+        result[1] = currentMax;
+        while(minHeap.size()>= nums.size()){
+            IndexValue  temp = minHeap.poll();
+            if(nums.get(temp.listIndex).size()> temp.indexInList+1)
+                minHeap.add(new IndexValue(temp.listIndex, temp.indexInList+1, nums.get(temp.listIndex).get(temp.indexInList+1)));
+            else
+                return result;
+            if(nums.get(temp.listIndex).size()> temp.indexInList+1 && currentMax< nums.get(temp.listIndex).get(temp.indexInList+1))
+                currentMax =   nums.get(temp.listIndex).get(temp.indexInList+1);
+            if(result[1]-result[0]>currentMax-minHeap.peek().val){
+                result[0] = minHeap.peek().val;
+                result[1] = currentMax;
+            }
+            //System.out.println(result[0]+"----"+result[1]);
         }
-        System.out.println(result);
-
-        return result.get(k-1);
+        return result;
     }
 }
-
-class CoordinateValue{
-    int x;
-    int y;
+class IndexValue{
+    int listIndex;
+    int indexInList;
     int val;
-
-    public CoordinateValue(int x, int y, int val){
-        this.x = x;
-        this.y = y;
+    public IndexValue(int listIndex,int indexInList, int val){
+        this.listIndex = listIndex;
+        this.indexInList = indexInList;
         this.val = val;
     }
 }
+
 //leetcode submit region end(Prohibit modification and deletion)
