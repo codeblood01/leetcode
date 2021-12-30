@@ -59,6 +59,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/com/gourav/leetcode/june30days/leetcode/editor/en/[2035]Partition Array Into Two Arrays to Minimize Sum Difference.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/com/gourav/leetcode/june30days/leetcode/editor/en/[2035]Partition Array Into Two Arrays to Minimize Sum Difference.java" />
+              <option name="questionId" value="2162" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/com/gourav/leetcode/june30days/leetcode/editor/en/[22]Generate Parentheses.java">
           <value>
             <LeetcodeEditor>
@@ -184,6 +192,14 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/src/com/gourav/leetcode/june30days/leetcode/editor/en/[480]Sliding Window Median.java" />
               <option name="questionId" value="480" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/com/gourav/leetcode/june30days/leetcode/editor/en/[494]Target Sum.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/com/gourav/leetcode/june30days/leetcode/editor/en/[494]Target Sum.java" />
+              <option name="questionId" value="494" />
             </LeetcodeEditor>
           </value>
         </entry>
